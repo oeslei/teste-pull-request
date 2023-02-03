@@ -28,3 +28,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: teste
+          path: README.md
